@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rashad's Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .calc {
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .macos-top-bar {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .macos-button {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ddd;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .calc-display {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 20px;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .calc-button {
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #eeeeee;
+            color: #333333;
+            cursor: pointer;
+        }
+
+        .calc-button:hover {
+            background-color: #dddddd;
+        }
+
+        .operation {
+            background-color: #f0f0f0;
+        }
+
+        .equals {
+            background-color: #ffc107;
+        }
+
+        .zero {
+            grid-column: span 2;
+        }
+    </style>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+    <header>This is Rashad's Calculator</header>
+    <table border="0" cellpadding="0" cellspacing="0" class="calc">
+        <tr>
+            <td colspan="4" class="calc-display" id="display">0</td>
+        </tr>
+        <tr>
+            <td class="calc-button" id="clear">C</td>
+            <td class="calc-button" id="plus-minus">±</td>
+            <td class="calc-button" id="percentage">%</td>
+            <td class="calc-button" id="divide">&divide;</td>
+        </tr>
+        <tr>
+            <td class="calc-button" id="seven">7</td>
+            <td class="calc-button" id="eight">8</td>
+            <td class="calc-button" id="nine">9</td>
+            <td class="calc-button" id="multiply">&times;</td>
+        </tr>
+        <tr>
+            <td class="calc-button" id="four">4</td>
+            <td class="calc-button" id="five">5</td>
+            <td class="calc-button" id="six">6</td>
+            <td class="calc-button" id="subtract">&minus;</td>
+        </tr>
+        <tr>
+            <td class="calc-button" id="one">1</td>
+            <td class="calc-button" id="two">2</td>
+            <td class="calc-button" id="three">3</td>
+            <td class="calc-button" id="add">+</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="calc-button zero" id="zero">0</td>
+            <td class="calc-button" id="decimal">,</td>
+            <td class="calc-button operation equals" id="equals">=</td>
+        </tr>
+    </table>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
